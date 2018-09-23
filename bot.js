@@ -123,4 +123,17 @@ var Za7f = [
 
 ];
 
+client.on('message', message => {
+ if (message.content.startsWith("-عقاب")) {
+              if(!message.channel.guild) return message.reply('** This command only for servers**');
+var embed = new Discord.RichEmbed()
+.setColor('RANDOM')
+ .setThumbnail(message.author.avatarURL) 
+.addField('Speed BOT' ,
+`${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
+message.channel.sendEmbed(embed);
+console.log('[38ab] Send By: ' + message.author.username)
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
