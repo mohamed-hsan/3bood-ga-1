@@ -28,8 +28,8 @@ client.user.setGame(`=help`,"http://twitch.tv/S-F")
   console.log('')
 });
   client.on("message", message => {
-	var prefix = "-";
- if (message.content === "-help-games") {
+	var prefix = "=";
+ if (message.content === "=games") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
