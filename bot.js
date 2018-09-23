@@ -55,10 +55,8 @@ By:@MuhammadHassan_77#2032
 ❖=rps ~ حجر ورقة مقص
 ❖=speed ~ اسرع كتابة
 ❖=quas ~ اسئلة عامة
-❖=نكت ~ نكت 
 ❖=لعبة فكك ~ فكك
 ❖=عواصم عشوائية ~ عواصم
-❖=لعبة كت تويت ~ كت تويت
 ❖=roll <number> ~ قرعة
 ❖=لو خيروك بطريقة حلوة ~ لو خيروك
 ❖=فوائد ونصائح  ~ هل تعلم
@@ -143,58 +141,6 @@ var cats = ["http://www.shuuf.com/shof/uploads/2015/09/09/jpg/shof_b9d73150f90a5
          var cat = new Discord.RichEmbed()
 .setImage(cats[Math.floor(Math.random() * cats.length)])
 message.channel.sendEmbed(cat);
-    }
-});
-client.on('message', message => {
-var prefix = "=";
-var cats = ["http://palestine-kitchen.ps/wp-content/uploads/2017/12/%D9%86%D9%83%D8%AA-%D8%AF%D8%A8%D8%A7%D9%86%D8%A9.png","http://www.i7lm.com/wp-content/uploads/2017/04/136769797816.jpg","https://4.bp.blogspot.com/-p62zmDIDXmI/WKzqNt9smaI/AAAAAAAAC4Q/sW_bSIB8OaQhwOYFeplc3uzz8PBN7l3YACEw/s1600/13602501135.jpg","https://www.universemagic.com/images/2016/03/7938-2-or-1457539273.jpg","https://1.bp.blogspot.com/-yFk-FzHSyE8/WR9fmPcsCUI/AAAAAAAAE6c/AmvjLadOiLY9GiCqMLHgA121bY2RS_dCwCLcB/s1600/%25D9%2586%25D9%2583%25D8%25AA%2B%25D9%2585%25D8%25B6%25D8%25AD%25D9%2583%25D8%25A9%2B1.jpg","https://l7zaat.com/wp-content/uploads/2018/02/423.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","https://i.fatafeat.com/storage/attachments/15/image3_698123_large.jpg","http://www.shuuf.com/shof/uploads/2018/02/08/jpg/shof_97d686082bdb0a2.jpg"];
-        var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'نكت')) {
-         var cat = new Discord.RichEmbed()
-.setImage(cats[Math.floor(Math.random() * cats.length)])
-message.channel.sendEmbed(cat);
-    }
-});
-const cuttweet = [
-     'كت تويت ‏| تخيّل لو أنك سترسم شيء وحيد فيصبح حقيقة، ماذا سترسم؟',
-     'كت تويت | أكثر شيء يُسكِت الطفل برأيك؟',
-     'كت تويت | الحرية لـ ... ؟',
-     'كت تويت | قناة الكرتون المفضلة في طفولتك؟',
-     'كت تويت ‏| كلمة للصُداع؟',
-     'كت تويت ‏| ما الشيء الذي يُفارقك؟',
-     'كت تويت | موقف مميز فعلته مع شخص ولا يزال يذكره لك؟',
-     'كت تويت ‏| أيهما ينتصر، الكبرياء أم الحب؟',
-     'كت تويت | بعد ١٠ سنين ايش بتكون ؟',
-     'كت تويت ‏| مِن أغرب وأجمل الأسماء التي مرت عليك؟',
-     '‏كت تويت | عمرك شلت مصيبة عن شخص برغبتك ؟',
-     'كت تويت | أكثر سؤال وجِّه إليك مؤخرًا؟',
-     '‏كت تويت | ما هو الشيء الذي يجعلك تشعر بالخوف؟',
-     '‏كت تويت | وش يفسد الصداقة؟',
-     '‏كت تويت | شخص لاترفض له طلبا ؟',
-     '‏كت تويت | كم مره خسرت شخص تحبه؟.',
-     '‏كت تويت | كيف تتعامل مع الاشخاص السلبيين ؟',
-     '‏كت تويت | كلمة تشعر بالخجل اذا قيلت لك؟',
-     '‏كت تويت | جسمك اكبر من عٌمرك او العكسّ ؟!',
-     '‏كت تويت |أقوى كذبة مشت عليك ؟',
-     '‏كت تويت | تتأثر بدموع شخص يبكي قدامك قبل تعرف السبب ؟',
-     'كت تويت | هل حدث وضحيت من أجل شخصٍ أحببت؟',
-     '‏كت تويت | أكثر تطبيق تستخدمه مؤخرًا؟',
-     '‏كت تويت | ‏اكثر شي يرضيك اذا زعلت بدون تفكير ؟',
-     '‏كت تويت | وش محتاج عشان تكون مبسوط ؟',
-     '‏كت تويت | مطلبك الوحيد الحين ؟',
-     '‏كت تويت | هل حدث وشعرت بأنك ارتكبت أحد الذنوب أثناء الصيام؟',
-]
-
- client.on('message', message => {
-   if (message.content.startsWith("=كت تويت")) {
-                if(!message.channel.guild) return message.reply('** This command only for servers**');
-  var embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-   .setThumbnail(message.author.avatarURL) 
- .addField('لعبه كت تويت' ,
-  `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`)
-  message.channel.sendEmbed(embed);
-  console.log('[id] Send By: ' + message.author.username)
     }
 });
 
