@@ -27,6 +27,23 @@ client.user.setGame(`=help`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
+client.on("message", message => {
+	var prefix = "-";
+ if (message.content === "-help") {
+  const embed = new Discord.RichEmbed()  
+      .setColor("#000000") 
+      .setDescription(`
+	  
+	         Please Chose: 
+			 
+${prefix}games ⇏ اوامر الالعاب
+
+By:@MuhammadHassan_77#2032
+	  `)
+   message.channel.sendEmbed(embed)
+    
+   }
+   }); 
   client.on("message", message => {
 	var prefix = "=";
  if (message.content === "=games") {
@@ -45,9 +62,7 @@ client.user.setGame(`=help`,"http://twitch.tv/S-F")
 ❖-roll <number> ~ قرعة
 ❖-لو خيروك بطريقة حلوة ~ لو خيروك
 ❖-فوائد ونصائح  ~ هل تعلم
-❖-يعطيك عقابات قاسية ~ عقاب   `)
-  
-	By:@MuhammadHassan_77#2032 
+❖-يعطيك عقابات قاسية ~ عقاب   `) 
    message.author.sendEmbed(embed)
     
    }
