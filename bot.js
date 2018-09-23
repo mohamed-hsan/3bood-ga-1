@@ -46,6 +46,8 @@ client.user.setGame(`=help`,"http://twitch.tv/S-F")
 ❖-لو خيروك بطريقة حلوة ~ لو خيروك
 ❖-فوائد ونصائح  ~ هل تعلم
 ❖-يعطيك عقابات قاسية ~ عقاب   `)
+  
+	By:@MuhammadHassan_77#2032 
    message.author.sendEmbed(embed)
     
    }
