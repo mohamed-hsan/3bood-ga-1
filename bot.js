@@ -28,7 +28,7 @@ client.user.setGame(`=help`,"http://twitch.tv/S-F")
   console.log('')
 });
 client.on("message", message => {
-	var prefix = "-";
+	var prefix = "=";
  if (message.content === "-help") {
   const embed = new Discord.RichEmbed()  
       .setColor("#000000") 
