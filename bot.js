@@ -494,54 +494,7 @@ const type = [
  
               },
     {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040721601331211/ae8cf2598c441e76.png",
-        "answers": ["القرش الأسودد"]
- 
-              },
-    {
-   
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040729637748747/bf76692d54e6a0dd.png",
-        "answers": ["ددسن موديل 85"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040736835043341/e66ff909a6330b13.png",
-        "answers": ["الحارثيء"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040746503176194/351af3b19fc53323.png",
-        "answers": ["عزازي مسرع"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040751557181440/6777776666.png",
-        "answers": ["جاكي شاان"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040758108684289/2613844efcb8b05b.png",
-        "answers": ["دارك نت"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040765671014401/c89aa167715a85b9.png",
-        "answers": ["فانتاستيك"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040772818239489/01d73182b48785e1.png",
-        "answers": ["زباله متنقلة"]
- 
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040778467835924/9dff572a5bf1b602.png",
-        "answers": ["اكس بوكس يلد"]
- 
-        },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429330153735454722/430040783228370964/91ebb70e0dd936be.png",
-        "answers": ["بكسل يالوصخخ"]
+               
 
     }
 ];
