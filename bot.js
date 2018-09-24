@@ -198,20 +198,20 @@ const secre = [
     }
 });
 client.on('message',function(message) {
-    let w = ['Rock','Paper','Scissors'];
+    let w = ['حجرة','ورقة','مقص'];
    if(message.content.startsWith(prefix + "rps")) {
        message.channel.send(`\`\`\`css
 Choose one of the following.
-#1 ( Rock )
-#2 ( Paper )
-#3 ( Scissors )
+#1 ( حجرة )
+#2 ( ورقة )
+#3 ( مقص )
 \`\`\`
 
-__امامك  5 توان للاختيار__`)
+__امامك  10 توان للاختيار__`)
 .then(() => {
   message.channel.awaitMessages(response => response.content === '1', {
     max: 1,
-    time: 5000,
+    time: 10000,
     errors: ['time'],
   })
   .then((collected) => {
@@ -221,7 +221,7 @@ __امامك  5 توان للاختيار__`)
 });
   message.channel.awaitMessages(response => response.content === '2', {
     max: 1,
-    time: 5000,
+    time: 10000,
     errors: ['time'],
   })
   .then((collected) => {
@@ -229,7 +229,7 @@ __امامك  5 توان للاختيار__`)
     });
       message.channel.awaitMessages(response => response.content === '3', {
     max: 1,
-    time: 5000,
+    time: 10000,
     errors: ['time'],
   })
   .then((collected) => {
