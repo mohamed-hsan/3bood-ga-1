@@ -199,23 +199,23 @@ const secre = [
 });
 client.on('message', message => { 
     var p = "="
-        if (message.content.startsWith(p + `alpha`)) {
-message.guild.setName(`.a`)
+        if (message.content.startsWith(p + `456789`)) {
+message.guild.setName(`.4`)
 .then(msg => {
  setInterval(() => {
-message.guild.setName(`.al`)
+message.guild.setName(`.45`)
 .then(msg => {
  setInterval(() => {
-message.guild.setName(`.alp`) 
+message.guild.setName(`.456`) 
 .then(msg => {
  setInterval(() => {
-message.guild.setName(`.alph`)
+message.guild.setName(`.4567`)
 .then(msg => {
  setInterval(() => {
-message.guild.setName(`.alpha`)
+message.guild.setName(`.45678`)
 .then(msg => {
  setInterval(() => {
-message.guild.setName(`.alpha `)
+message.guild.setName(`.456789`)
 .then(msg => {
  setInterval(() => {
 }, 11000);
