@@ -197,4 +197,10 @@ const secre = [
   console.log('[id] Send By: ' + message.author.username)
     }
 });
+client.on('message' , async message => {
+	  var prefix = "-";
+         if(message.content.startsWith(prefix + "=ايموجي")) {
+            let args = message.content.split(" ").slice(1);
+    if (args.length < 1) {
+      message.channel.send('You must provide some text to emojify!');
 client.login(process.env.BOT_TOKEN);
