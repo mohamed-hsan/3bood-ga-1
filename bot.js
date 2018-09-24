@@ -222,17 +222,17 @@ const codes = {
   
   client.on('message' , async message => {
 	  var prefix = "=";
-         if(message.content.startsWith(prefix + "ايموجي")) {
+         if(message.content.startsWith(prefix + "=ايموجي")) {
             let args = message.content.split(" ").slice(1);
     if (args.length < 1) {
       message.channel.send('');
   }
   
   message.channel.send(
-      args.join(' ')
-          .split('')
+      args.join('... ')
+          .split('ا')
           .map(c => codes[c] || c)
-          .join('حاول ان تجد الايموجي الصحيح')
+          .join('حاول انت تبحث على الايموجي الصحيح')
   );
   };
   });
