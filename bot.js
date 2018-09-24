@@ -232,7 +232,7 @@ const codes = {
       args.join(' ')
           .split('')
           .map(c => codes[c] || c)
-          .join('')
+          .join('حاول ان تجد الايموجي الصحيح')
   );
   };
   });
