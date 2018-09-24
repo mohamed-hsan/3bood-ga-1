@@ -57,7 +57,6 @@ By:@MuhammadHassan_77#2032
 ❖=rps ~ حجر ورقة مقص
 ❖=speed ~ اسرع كتابة
 ❖=quas ~ اسئلة عامة
-❖=يعكس لك الكلمة الي تكتبها ~ اعكس
 ❖=لعبة فكك ~ فكك
 ❖=عواصم عشوائية ~ عواصم
 ❖=لو خيروك بطريقة حلوة ~ لو خيروك
@@ -238,17 +237,5 @@ __امامك  10 توان للاختيار__`)
     });
    } 
 });
-client.on('message', message => {
-    if (message.author.bot) return;
-    if (message.content.indexOf('=اعكس') === 0) {
-        var text = message.content.substring(1);
-        var reversed = '';
-        var i = text.length;
-        while (i > 0) {
-            reversed += text.substring(i - 1, i);
-            i--;
-        }
-        message.reply(reversed);
-    }
-});
+
 client.login(process.env.BOT_TOKEN);
