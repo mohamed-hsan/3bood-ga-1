@@ -198,7 +198,7 @@ const secre = [
     }
 });
 const codes = {
-    ' :flag_jp: ': '  :flag_jp:  ',
+    ' ❔ ': '  🙃  ',
     '0': '0⃣',
     '1': '1⃣',
     '2': '2⃣',
@@ -221,11 +221,11 @@ const codes = {
   
   
   client.on('message' , async message => {
-	  var prefix = "=";
+	  var prefix = "";
          if(message.content.startsWith(prefix + "=ايموجي")) {
             let args = message.content.split(" ").slice(1);
     if (args.length < 1) {
-      message.channel.send('حاول انت تبحث على الايموجي الصحيح!');
+      message.channel.send('');
   }
   
   message.channel.send(
