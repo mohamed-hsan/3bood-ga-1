@@ -295,36 +295,5 @@ client.on('message', message => {
         })
     }
 });
-client.on('message', message => {
-if (!points[message.author.id]) points[message.author.id] = {
-    points: 0,
-  };
-if (message.content.startsWith(prefix + '=فكك')) {
-    if(!message.channel.guild) return message.reply('**لا تلعب عندي العب بالسيرفرات**').then(m => m.delete(3000));
-
-const type = require('./gamesbombot/fkk.json');
-const item = type[Math.floor(Math.random() * type.length)];
-const filter = response => {
-    return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
-};
-message.channel.send('**الحق عندك 15 ثانية**').then(msg => {
-
-            
-msg.channel.send(`${item.type}`).then(() => {
-        message.channel.awaitMessages(filter, { maxMatches: 1, time: 15000, errors: ['time'] })
-        .then((collected) => {
-        message.channel.send(`${collected.first().author} ✅ أصلي عليك`);
-            let points = {}
-            let userData = points[message.author.id];
-            let userdata = require('./Points.json');
-            userData.points++;
-          })
-          .catch(collected => {
-            message.channel.send(`🕓😀أنتهى الوقت أعد العب مرة آخرى😀🕓`);
-          })
-        })
-    })
-}
-});
 
 client.login(process.env.BOT_TOKEN);
