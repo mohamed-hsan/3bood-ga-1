@@ -396,32 +396,5 @@ var aoasm =[
      });
   }
 });
-client.on('message', message => {
-    if (message.content == "=جاب") {
-         message.react('🤔','👌')
-        var x = ['"https://cdn.discordapp.com/attachments/429298913980317696/429298994078810127/a90c6b270eb8bb2e.png",'
-        ];
-        var x2 = ["البرازيل"]
-        ];
-	    var x3 = Math.floor(Math.random()*x.length)
-        message.channel.send(`📢 امامك دقيقة لحل الاسئلة , السؤال يقول :  __**${x[x3]}**__ `).then(msg1=> {
-            var r = message.channel.awaitMessages(msg => msg.content == x2[x3], {
-               thing: true,
-               maxMatches : 1,
-                time : 60000,
-                 maxUses: 1,
-                errors : ['time']
-            })
-        r.catch(() => {
-            return message.channel.send(`:negative_squared_cross_mark: لقد انتهى الوقت ولم يقم أحد بالأجابة بشكل صحيح `)
-        })
-
-        r.then((collected)=> {
-            message.channel.send(`${collected.first().author} لقد قمت بكتابة الجواب الصحيح  `);
-            message.react('✅')
-        })
-        })
-    }
-});
 
 client.login(process.env.BOT_TOKEN);
