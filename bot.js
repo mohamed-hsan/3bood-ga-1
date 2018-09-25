@@ -402,7 +402,7 @@ client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
     points: 0,
   };
-if (message.content.startsWith(prefix + 'فكك')) {
+if (message.content.startsWith(prefix + '=فكك')) {
     if(!message.channel.guild) return message.reply('**لا تلعب عندي العب بالسيرفرات**').then(m => m.delete(3000));
 
 const type = require('./gamesbombot/fkk.json');
