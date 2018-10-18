@@ -359,25 +359,17 @@ client.on('message' , message => {
   }
 }
  });
-const client = new Discord.Client();
-const prefix = "=";
-client.on('ready', () => {
-    coconst Discord = require('discord.js');
-nsole.log(`Logged in as ${client.user.tag}!`);
-    console.log(`in ${client.guilds.size} servers `)
-    console.log(`[AlphaCodes] ${client.users.size}`)
-    client.user.setStatus("online")   
+ 
 });
 
 
 
-//الكود حق بوت Turbo Bot
-let points = JSON.parse(fs.readFileSync('./points.json', 'utf8')); // يقوم بقراءه ملف النقاط , والمسار حق النقاطس العام لجميع الأوامر
+let points = JSON.parse(fs.readFileSync('./points.json', 'utf8'));
 client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
     points: 0,
   };
-if (message.content.startsWith(prefix + 'فكك')) {
+if (message.content.startsWith(prefix + '=فكك')) {
     if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 
 const type = require('./fkk.json');
